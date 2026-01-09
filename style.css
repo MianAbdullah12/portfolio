@@ -63,8 +63,21 @@ nav a.active{
     color: #b74b4b;
     border-bottom: 3px solid #b74b4b;
 }
+.menu-toggle {
+    display: none;
+    font-size: 3rem;
+    color: #b74b4b;
+    cursor: pointer;
+}
 
 @media(max-width:995px){
+    .menu-toggle {
+        display: block;
+        position: absolute;
+        top: 1.5rem;
+        right: 2rem;
+        z-index: 101;
+    }
     nav{
         position: absolute;
         display: none;

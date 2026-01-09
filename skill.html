@@ -20,12 +20,23 @@
         <a href="Experience.html">Experience</a>
         <a href="Contact.html">Contact</a>
     </nav>
+    <div class="menu-toggle">
+        <i class="fa-solid fa-bars"></i>
+    </div>
 </header>
 
 <section class="skills">
     <h1 class="heading">My <span>Skills</span></h1>
 
     <div class="skills-container">
+
+         <div class="skill-card">
+            <i class="fa-solid fa-image"></i>
+             <h3>Image Annotation Project</h3>
+             <p>Developed a web-based Image Annotation tool using HTML, CSS, and JavaScript. Allows labeling, tagging, and saving annotations efficiently.</p>
+             <a href="https://www.upwork.com/services/product/admin-customer-support-check-abuse-in-image-2009299524144646297?ref=project_share&tier=0" target="_blank" class="btn">View Project</a>
+        </div>
+
 
         <div class="skill-card">
             <i class="fa-solid fa-code"></i>
@@ -74,9 +85,19 @@
             <h3>Version Control</h3>
             <p>Git & GitHub for collaboration, branch management, commits, and code versioning.</p>
         </div>
+       
+
 
     </div>
 </section>
+<script>
+const menuToggle = document.querySelector('.menu-toggle');
+const nav = document.querySelector('nav');
+
+menuToggle.addEventListener('click', () => {
+    nav.classList.toggle('active');
+});
+</script>
 
 </body>
 </html>
